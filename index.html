@@ -11,10 +11,10 @@
 
   <title>Natural Language Interface · Local LLM (Ollama) · Pipeline Explained</title>
   <meta name="description"
-        content="BEAM PROCESS SOLVER-FINAL: A 4-stage decoupled hybrid structural beam solver pipeline covering Parsing, Validation, FEM Solving, and interactive reporting with FastAPI & Chart.js." />
+        content="A 4-stage decoupled hybrid structural beam solver pipeline covering Parsing, Validation, FEM Solving, and interactive reporting with FastAPI & Chart.js." />
 
   <!-- Open Graph -->
-  <meta property="og:title"       content="BEAM PROCESS SOLVER-FINAL — Hybrid FEM Pipeline" />
+  <meta property="og:title"       content="Natural Language Interface · Local LLM (Ollama) · Pipeline Explained" />
   <meta property="og:description" content="Decoupled structural beam solver: NLP parsing → Pydantic validation → FEM solver → FastAPI dashboard." />
   <meta property="og:type"        content="website" />
 
@@ -240,7 +240,7 @@
     .btn svg { width: 17px; height: 17px; fill: currentColor; flex-shrink: 0; }
 
     /* ════════════════════════════════════════════════
-       VIDEO PLAYER — primary feature
+       VIDEO PLAYER
     ════════════════════════════════════════════════ */
     .video-section { margin-bottom: 68px; animation: slide-up 0.75s 0.38s ease both; }
 
@@ -539,13 +539,10 @@
 </head>
 <body>
 
-  <!-- Background decorations -->
   <div class="orb orb-a" aria-hidden="true"></div>
   <div class="orb orb-b" aria-hidden="true"></div>
 
-  <!-- ════════════════════════════════════════════════
-       HERO
-  ════════════════════════════════════════════════ -->
+  <!-- HERO -->
   <header>
     <div class="page">
       <section class="hero" aria-labelledby="hero-title">
@@ -561,7 +558,7 @@
         </h1>
 
         <p class="hero-desc">
-          A 4-stage decoupled engineering pipeline — translating natural language beam descriptions
+          A 4-stage decoupled engineering pipeline &mdash; translating natural language beam descriptions
           into verified FEM structural results with interactive SFD, BMD, and Margin of Safety reports.
         </p>
 
@@ -610,9 +607,7 @@
   <main>
     <div class="page">
 
-      <!-- ════════════════════════════════════════════
-           VIDEO PLAYER
-      ════════════════════════════════════════════ -->
+      <!-- VIDEO PLAYER -->
       <section class="video-section" aria-label="Project demo video">
         <div class="video-card">
 
@@ -624,24 +619,10 @@
           </div>
 
           <div class="video-wrapper">
-            <!--
-              VIDEO FILE SETUP
-              ─────────────────────────────────────────
-              Place your video file in the SAME folder as index.html.
-              Recommended format: MP4 (H.264 + AAC) for broadest compatibility.
-              Filename should have NO spaces.
-              e.g.:  BEAM-PROCESS-SOLVER-FINAL.mp4   ✅
-            -->
-            <video
-              id="demo-video"
-              controls
-              playsinline
-              preload="metadata"
-            >
-              <source src="BEAM-PROCESS-SOLVER-FINAL.vm4"  type="video/m4v" />
-              <source src="BEAM-PROCESS-SOLVER-FINAL.webm" type="video/webm" />
-              <p>
-                Your browser does not support HTML5 video.
+            <video id="demo-video" controls playsinline preload="metadata">
+              <source src="BEAM PROCESS SOLVER-FINAL.m4v"  type="video/mp4" />
+              <source src="BEAM PROCESS SOLVER-FINAL.mp4"  type="video/mp4" />
+              <p>Your browser does not support HTML5 video.
                 <a href="BEAM PROCESS SOLVER-FINAL.m4v" download>Download the video</a>.
               </p>
             </video>
@@ -658,9 +639,7 @@
         </div>
       </section>
 
-      <!-- ════════════════════════════════════════════
-           4-STAGE PIPELINE
-      ════════════════════════════════════════════ -->
+      <!-- 4-STAGE PIPELINE -->
       <section class="pipeline-section" aria-labelledby="pipeline-heading">
         <h2 id="pipeline-heading" class="section-heading">
           The <span>4-Stage Pipeline</span>
@@ -668,14 +647,13 @@
 
         <div class="pipeline-grid">
 
-          <!-- Stage 01 -->
           <article class="pipe-card s1">
             <div class="pipe-num">Stage 01</div>
             <span class="pipe-icon" aria-hidden="true">🧠</span>
             <h3>Parsing Phase</h3>
             <p>
               A Hybrid Router processes natural language input. Simple problems use fast Regex rules.
-              Advanced queries — rotational springs, thermal loads, stepped stiffness — are dispatched
+              Advanced queries &mdash; rotational springs, thermal loads, stepped stiffness &mdash; are dispatched
               to local <strong>Ollama (Llama-3)</strong> via <strong>LangChain</strong>.
               <strong>Pydantic</strong> enforces strict schema validation at the boundary.
             </p>
@@ -687,14 +665,13 @@
             </div>
           </article>
 
-          <!-- Stage 02 -->
           <article class="pipe-card s2">
             <div class="pipe-num">Stage 02</div>
             <span class="pipe-icon" aria-hidden="true">✅</span>
             <h3>Validation Phase</h3>
             <p>
               The raw JSON payload is assembled into a typed domain model.
-              Geometric checks enforce <code style="background:rgba(59,130,246,0.15);padding:1px 6px;border-radius:4px;font-family:monospace">0 ≤ x ≤ L</code>
+              Geometric checks enforce <code style="background:rgba(59,130,246,0.15);padding:1px 6px;border-radius:4px;font-family:monospace">0 &le; x &le; L</code>
               for all loads and supports. Mechanical validation verifies positive stiffness (EI &gt; 0).
               Material properties are auto-filled via standards database lookup.
             </p>
@@ -706,7 +683,6 @@
             </div>
           </article>
 
-          <!-- Stage 03 -->
           <article class="pipe-card s3">
             <div class="pipe-num">Stage 03</div>
             <span class="pipe-icon" aria-hidden="true">⚙️</span>
@@ -725,7 +701,6 @@
             </div>
           </article>
 
-          <!-- Stage 04 -->
           <article class="pipe-card s4">
             <div class="pipe-num">Stage 04</div>
             <span class="pipe-icon" aria-hidden="true">📊</span>
@@ -747,9 +722,7 @@
         </div>
       </section>
 
-      <!-- ════════════════════════════════════════════
-           FEATURES
-      ════════════════════════════════════════════ -->
+      <!-- FEATURES -->
       <section class="features-section" aria-labelledby="features-heading">
         <h2 id="features-heading" class="section-heading">
           What makes it <span>special</span>
@@ -760,7 +733,7 @@
           <article class="feat-card">
             <span class="feat-icon" aria-hidden="true">🗣️</span>
             <h3>Natural Language Input</h3>
-            <p>Describe your beam in plain English — no rigid syntax. The Hybrid Router extracts spans, loads, and boundaries intelligently.</p>
+            <p>Describe your beam in plain English &mdash; no rigid syntax. The Hybrid Router extracts spans, loads, and boundaries intelligently.</p>
           </article>
 
           <article class="feat-card">
@@ -772,7 +745,7 @@
           <article class="feat-card">
             <span class="feat-icon" aria-hidden="true">📐</span>
             <h3>Engineering Accuracy</h3>
-            <p>Cantilevers, simply-supported, fixed-fixed, continuous beams — all solved with rigorous structural mechanics and verified margins.</p>
+            <p>Cantilevers, simply-supported, fixed-fixed, continuous beams &mdash; all solved with rigorous structural mechanics and verified margins.</p>
           </article>
 
           <article class="feat-card">
@@ -796,9 +769,7 @@
         </div>
       </section>
 
-      <!-- ════════════════════════════════════════════
-           HOW IT WORKS
-      ════════════════════════════════════════════ -->
+      <!-- HOW IT WORKS -->
       <section class="steps-section" aria-labelledby="steps-heading">
         <h2 id="steps-heading" class="section-heading">
           How it <span>works</span>
@@ -836,9 +807,7 @@
     </div><!-- /.page -->
   </main>
 
-  <!-- ════════════════════════════════════════════════
-       FOOTER
-  ════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
   <footer>
     <div class="page">
       <p>
@@ -849,17 +818,12 @@
     </div>
   </footer>
 
-  <!-- ════════════════════════════════════════════════
-       VANILLA JS — Intersection observer + video fallback
-  ════════════════════════════════════════════════ -->
   <script>
     (function () {
       'use strict';
 
-      /* ── Intersection Observer: animate cards on scroll ── */
       if ('IntersectionObserver' in window) {
         var cards = document.querySelectorAll('.feat-card, .pipe-card, .step');
-
         var observer = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
             if (entry.isIntersecting) {
@@ -878,26 +842,22 @@
         });
       }
 
-      /* ── Video: graceful error handling ── */
       var video = document.getElementById('demo-video');
       if (video) {
         video.addEventListener('error', function () {
           var wrapper = video.closest('.video-wrapper');
           if (!wrapper) return;
-
           var fallback = document.createElement('div');
           fallback.setAttribute('role', 'alert');
           fallback.style.cssText = [
-            'display:flex', 'align-items:center', 'justify-content:center',
-            'flex-direction:column', 'gap:12px', 'padding:48px 24px',
-            'text-align:center', 'color:#8fa3bf', 'font-family:Inter,sans-serif'
+            'display:flex','align-items:center','justify-content:center',
+            'flex-direction:column','gap:12px','padding:48px 24px',
+            'text-align:center','color:#8fa3bf','font-family:Inter,sans-serif'
           ].join(';');
-
           fallback.innerHTML =
             '<span style="font-size:2.4rem">🎬</span>' +
             '<strong style="color:#f0f4ff;font-size:1rem">Video not found</strong>' +
-            '<span style="font-size:0.83rem">Place <code style="background:rgba(59,130,246,0.15);padding:2px 7px;border-radius:5px;font-family:JetBrains Mono,monospace">BEAM-PROCESS-SOLVER-FINAL.mp4</code> in the same folder as <code style="background:rgba(59,130,246,0.15);padding:2px 7px;border-radius:5px;font-family:JetBrains Mono,monospace">index.html</code></span>';
-
+            '<span style="font-size:0.83rem">Place <code style="background:rgba(59,130,246,0.15);padding:2px 7px;border-radius:5px;font-family:JetBrains Mono,monospace">BEAM PROCESS SOLVER-FINAL.m4v</code> in the same folder as <code style="background:rgba(59,130,246,0.15);padding:2px 7px;border-radius:5px;font-family:JetBrains Mono,monospace">index.html</code></span>';
           wrapper.replaceChild(fallback, video);
         });
       }
